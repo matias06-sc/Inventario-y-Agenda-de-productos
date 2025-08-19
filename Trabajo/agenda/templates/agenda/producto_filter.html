@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filtrar Productos</title>
+</head>
+<body>
+    <h1>Filtro</h1>
+    <form method="GET">
+        <input type="text" name="q" placeholder="Buscar producto...">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <ul>
+        {% for r in resultados %}
+            <li>{{ r.producto }} - {{ r.categoria }} - {{ r.precio }}</li>
+        {% empty %}
+            <li>No se encontraron resultados</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'producto_list' %}">⬅ Volver</a>
+</body>
+</html>

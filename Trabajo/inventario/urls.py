@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from agenda import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.producto_list, name='producto_list'),
+    path('edit/<int:pk>/', views.producto_edit, name='producto_edit'),
+    path('delete/<int:pk>/', views.producto_delete, name='producto_delete'),
+    path('filter/', views.producto_filter, name='producto_filter'),
 ]
