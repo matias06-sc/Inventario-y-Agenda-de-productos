@@ -67,7 +67,7 @@ Inventario-y-Agenda-de-productos/
 ```
 
 ## 🔗 Enlace del Trello
-
+- https://trello.com/invite/b/680031ae4fc524088e4ac644/ATTI3da99a4d8352f2d05bff4672ed51ae608E2358CF/django-control-de-productos
 
 ## 🎥 Video explicativo (entregado por Drive):
 - Nombre de la carpeta:
