@@ -8,9 +8,10 @@
             font-family: Arial, sans-serif;
             background: #f2f2f2;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
         .form-container {
             background: #fff;
@@ -57,7 +58,7 @@
         .btn-extra {
             position: absolute;
             top: 20px;
-            right: 20px;
+            left: 20px; /* 👈 ahora en la esquina superior izquierda */
             background: #2196F3;
             color: white;
             padding: 6px 15px;
@@ -69,6 +70,10 @@
     </style>
 </head>
 <body>
+    <!-- Botón en la esquina superior izquierda -->
+    <a href="{% url 'agenda_productos' %}" class="btn-extra">Ver Agenda</a>
+
+    <h1 class="text-2xl font-bold mb-6 text-center">Formulario de registro</h1>
     <div class="form-container">
         <form>
             <div class="form-group">

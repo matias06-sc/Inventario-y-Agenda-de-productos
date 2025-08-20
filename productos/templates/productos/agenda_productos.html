@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Agenda de Productos</title>
+    <style> 
+        .btn-extra {
+            position: absolute;
+            top: 20px;
+            left: 20px; /* 👈 ahora en la esquina superior izquierda */
+            background: #2196F3;
+            color: white;
+            padding: 6px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 min-h-screen p-6">
+    <!-- Botón en la esquina superior derecha -->
+    <div class="top-right">
+        <a href="{% url 'formulario_producto' %}" class="btn-extra">Agregar Producto</a>
+    </div>
     <h1 class="text-2xl font-bold mb-6 text-center">Agenda de Productos</h1>
 
     <div class="grid grid-cols-2 gap-6">
