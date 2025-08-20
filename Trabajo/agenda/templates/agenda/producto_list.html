@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Productos</h1>
+
+    <!-- Formulario de creación -->
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <br>
+    <a href="{% url 'producto_filter' %}">🔎 Ir a Filtro</a>
+
+    <hr>
+    <h2>Lista</h2>
+    <table border="1">
+        <tr>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Prioridad</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        {% for p in productos %}
+        <tr>
+            <td>{{ p.producto }}</td>
+            <td>{{ p.categoria }}</td>
+            <td>{{ p.precio }}</td>
+            <td>{{ p.stock }}</td>
+            <td>{{ p.prioridad }}</td>
+            <td>{{ p.estado }}</td>
+            <td>
+                <a href="{% url 'producto_edit' p.id %}">Editar</a>
+                <a href="{% url 'producto_delete' p.id %}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
