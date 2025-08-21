@@ -70,11 +70,11 @@ Inventario-y-Agenda-de-productos/
 - https://trello.com/invite/b/680031ae4fc524088e4ac644/ATTI3da99a4d8352f2d05bff4672ed51ae608E2358CF/django-control-de-productos
 
 ## 🎥 Video explicativo (entregado por Drive):
-- Nombre de la carpeta:
+- Nombre de la carpeta: Inventario y Agenda de Productos
 - Contenido:
   - 🎥 Video
   - 📄 Documentacion
-  - 🔗 Link del Drive:
+  - 🔗 Link del Drive: https://drive.google.com/drive/folders/1ikd9IJ-VVtOSj0DPwzJwQjCGBaBd_GTK?usp=drive_link
 
 ## 🚀 Instalación y Configuración
 
